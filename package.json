@@ -1,0 +1,27 @@
+{
+  "name": "curie",
+  "version": "1.0.0",
+  "description": "**🚧 Under development**",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently npm:start:*",
+    "start:server": "cd server && npm run build && npm run start",
+    "start:client": "cd client && npm run build && npm run start",
+    "dev": "concurrently npm:dev:*",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarvis/curie.git"
+  },
+  "author": "jarvis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarvis/curie/issues"
+  },
+  "homepage": "https://github.com/jarvis/curie#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
